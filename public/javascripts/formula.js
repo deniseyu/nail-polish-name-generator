@@ -1,10 +1,16 @@
 var formula = (function() {
   var formulas = {
-    'describer noun': describerNoun,
-    'color noun': describerNoun,
-    'color': color
+    'fragrance color': describerNoun,
+    'color food': describerNoun,
+    'music color': describerNoun,
+    'emotion food': describerNoun,
+    'temperature color': describerNoun,
+    'emotion color': describerNoun,
+    'describer color': describerNoun,
+    'food': oneWord,
+    'color': oneWord
   }
-  function color(nailWords) {
+  function oneWord(nailWords) {
     return nailWords[0];
   };
   function describerNoun(nailWords) {

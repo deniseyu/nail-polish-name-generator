@@ -5,10 +5,17 @@ var lists = (function(){
   //pattern through an IIFE
 
   var nailWords = {
-    noun: ["slippers", "springtime", "day", "night", "lake"],
-    describer: ["minty", "fresh", "bold", "suave", "juicy"],
-    color: ["red", "orange", "yellow", "turquoise", "emerald"],
-    formula: ["describer noun", "color", "color noun"]
+    fragrance: ["minty", "fresh", "sweet", "spicy", "sugary"],
+    temperature: ["hot", "sizzling", "cool", "frigid"],
+    color: ["red", "pink", "yellow", "turquoise", "emerald", "cerulean", "tangerine"],
+    music: ["rock", "rock and roll", "emo", "punk", "jazz"],
+    food: ["pineapple", "candy", "sundae", "lollipop", "mango", "avocado"],
+    describer: ["elegant", "galactic", "starry", "suave", "wild"],
+    emotion: ["angry", "angelic", "innocent", "raging", "blissful", "happy", "hyper"],
+    formula: [
+      "fragrance color", "color food", "music color", "emotion food", "temperature color",
+      "emotion color", "describer color", "color", "food"
+    ]
   }
 
   return {
